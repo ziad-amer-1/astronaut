@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+    />
+    <title>Special Design</title>
+  </head>
+  <body>
+    <!-- start settings box -->
+    <div class="settings-box">
+      <div class="toggle-settings">
+        <div class="icon-container">
+          <i class="fa-solid fa-gear settings-icon"></i>
+        </div>
+      </div>
+      <div class="settings-container">
+        <div class="option-box">
+          <h4>Colors</h4>
+          <ul class="colors-list">
+            <li class="active" data-color="#FF9800"></li>
+            <li data-color="#E91E63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#03A9F4"></li>
+            <li data-color="#4CAF50"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h4>Random Backgrounds</h4>
+          <div class="random-backgrounds">
+            <span class="yes active" data-background="yes">Yes</span>
+            <span class="no" data-background="no">No</span>
+          </div>
+        </div>
+        <div class="option-box">
+          <h4>Show Bullets</h4>
+          <div class="bullets-option">
+            <span class="yes active" data-display="show">Yes</span>
+            <span class="no" data-display="hide">No</span>
+          </div>
+        </div>
+        <button class="reset-options">Reset Options</button>
+      </div>
+    </div>
+    <!-- end settings box -->
+    <!-- start nav bullets -->
+    <div class="nav-bullets">
+      <div class="bullet" data-section=".about-us">
+        <div class="tooltip">About Us</div>
+      </div>
+      <div class="bullet" data-section=".skills">
+        <div class="tooltip">My skills</div>
+      </div>
+      <div class="bullet" data-section=".gallery">
+        <div class="tooltip">Gallery</div>
+      </div>
+      <div class="bullet" data-section=".timeline">
+        <div class="tooltip">Timeline</div>
+      </div>
+      <div class="bullet" data-section=".features">
+        <div class="tooltip">Features</div>
+      </div>
+      <div class="bullet" data-section=".testimonials">
+        <div class="tooltip">Testimonials</div>
+      </div>
+    </div>
+    <!-- end nav bullets -->
+    <!-- start landing page -->
+    <div class="landing-page">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="header-area">
+          <div class="logo" data-aos="fade-right" data-aos-delay="150">
+            Special Design
+          </div>
+          <div class="links-container">
+            <ul class="links" data-aos="fade-left" data-aos-delay="300">
+              <li>
+                <a href="#" data-section=".about-us" class="active">About</a>
+              </li>
+              <li><a href="#" data-section=".gallery">Gallery</a></li>
+              <li><a href="#" data-section=".skills">Skills</a></li>
+              <li><a href="#" data-section=".timeline">Timeline</a></li>
+              <li><a href="#" data-section=".features">Features</a></li>
+              <li><a href="#" data-section=".testimonials">Testimonials</a></li>
+            </ul>
+            <button class="toggle-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="introduction-text">
+        <h1 data-aos="fade-left" data-aos-delay="300">
+          We are <span>Creative</span> Agency
+        </h1>
+        <p data-aos="fade-right" data-aos-delay="450">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, ab
+          hic.
+        </p>
+      </div>
+    </div>
+    <!-- end landing page -->
+    <!-- start about us -->
+    <div class="container" style="overflow: hidden">
+      <div class="about-us" id="about-us">
+        <div class="info-box">
+          <h2 data-aos="fade-right" data-aos-delay="150">About Us</h2>
+          <p data-aos="fade-right" data-aos-delay="200">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            doloremque explicabo, accusantium nostrum blanditiis quibusdam
+            voluptate quam assumenda exercitationem enim, reprehenderit quidem
+            sequi sit et fugiat dolorum, vero eligendi molestias.
+          </p>
+        </div>
+        <div class="image-box" data-aos="fade-left" data-aos-delay="350">
+          <img src="imgs/chosen-1.jpg" width="300px" alt="" />
+        </div>
+        <div
+          class="control-about-us-image"
+          data-aos="fade-left"
+          data-aos-delay="150"
+        >
+          <img
+            src="imgs/chosen-1.jpg"
+            class="active"
+            alt=""
+            id="image-1"
+            onclick="changeAboutUsImage('imgs/chosen-1.jpg'); addActiveClassToTheCurrentImage(id)"
+          />
+          <img
+            src="imgs/chosen-2.jpg"
+            alt=""
+            id="image-2"
+            onclick="changeAboutUsImage('imgs/chosen-2.jpg'); addActiveClassToTheCurrentImage(id)"
+          />
+          <img
+            src="imgs/chosen-3.jpg"
+            alt=""
+            id="image-3"
+            onclick="changeAboutUsImage('imgs/chosen-3.jpg'); addActiveClassToTheCurrentImage(id)"
+          />
+          <img
+            src="imgs/chosen-4.jpg"
+            alt=""
+            id="image-4"
+            onclick="changeAboutUsImage('imgs/chosen-4.jpg'); addActiveClassToTheCurrentImage(id)"
+          />
+          <img
+            src="imgs/chosen-5.jpg"
+            alt=""
+            id="image-5"
+            onclick="changeAboutUsImage('imgs/chosen-5.jpg'); addActiveClassToTheCurrentImage(id)"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end about us -->
+    <!-- start out skills -->
+    <div class="skills">
+      <div class="container">
+        <h2 data-aos="fade-down" data-aos-delay="200">My Skills</h2>
+        <div class="skill-box">
+          <div class="skill-name" data-aos="fade-right" data-aos-delay="200">
+            HTML
+          </div>
+          <div class="skill-progress">
+            <span data-progress="95%"></span>
+            <span
+              data-number="95%"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            ></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name" data-aos="fade-right" data-aos-delay="200">
+            CSS
+          </div>
+          <div class="skill-progress">
+            <span data-progress="90%"></span>
+            <span
+              data-number="90%"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            ></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name" data-aos="fade-right" data-aos-delay="200">
+            JavaScript
+          </div>
+          <div class="skill-progress">
+            <span data-progress="70%"></span>
+            <span
+              data-number="70%"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            ></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name" data-aos="fade-right" data-aos-delay="200">
+            Bootstrap
+          </div>
+          <div class="skill-progress">
+            <span data-progress="50%"></span>
+            <span
+              data-number="50%"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            ></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name" data-aos="fade-right" data-aos-delay="200">
+            SASS
+          </div>
+          <div class="skill-progress">
+            <span data-progress="70%"></span>
+            <span
+              data-number="70%"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            ></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name" data-aos="fade-right" data-aos-delay="200">
+            React
+          </div>
+          <div class="skill-progress">
+            <span data-progress="25%"></span>
+            <span
+              data-number="25%"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            ></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name" data-aos="fade-right" data-aos-delay="200">
+            Pugjs
+          </div>
+          <div class="skill-progress">
+            <span data-progress="70%"></span>
+            <span
+              data-number="70%"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end out skills -->
+    <!-- start gallery -->
+    <div class="gallery">
+      <div class="container">
+        <h2 data-aos="fade-down" data-aos-delay="200">Our Gallery</h2>
+        <div class="imgs-box">
+          <img
+            src="imgs/gallery-1.jpg"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            alt="image one"
+          />
+          <img
+            src="imgs/gallery-2.jpg"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            alt="image two"
+          />
+          <img
+            src="imgs/gallery-3.jpg"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            alt="image three"
+          />
+          <img
+            src="imgs/gallery-4.jpg"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            alt="image four"
+          />
+          <img
+            src="imgs/gallery-5.jpg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            alt="image five"
+          />
+          <img
+            src="imgs/gallery-6.jpg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            alt=""
+          />
+          <img
+            src="imgs/gallery-7.jpg"
+            data-aos="fade-up"
+            data-aos-delay="250"
+            alt=""
+          />
+          <img
+            src="imgs/gallery-8.jpg"
+            data-aos="fade-up"
+            data-aos-delay="250"
+            alt=""
+          />
+          <img
+            src="imgs/gallery-9.jpg"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            alt=""
+          />
+          <img
+            src="imgs/gallery-10.jpg"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end gallery -->
+    <!-- start timeline -->
+    <div class="timeline">
+      <div class="container">
+        <div class="timeline-content">
+          <div class="year" data-aos="fade-down" data-aos-delay="200">2022</div>
+          <div class="left" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                illum suscipit inventore quisquam porro itaque eaque eius in
+                similique est iure temporibus totam dolore, minima repellat
+                fugiat doloremque nesciunt consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="right" data-aos="fade-left" data-aos-delay="200">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                illum suscipit inventore quisquam porro itaque eaque eius in
+                similique est iure temporibus totam dolore, minima repellat
+                fugiat doloremque nesciunt consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="left" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                illum suscipit inventore quisquam porro itaque eaque eius in
+                similique est iure temporibus totam dolore, minima repellat
+                fugiat doloremque nesciunt consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+          <div class="left" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                illum suscipit inventore quisquam porro itaque eaque eius in
+                similique est iure temporibus totam dolore, minima repellat
+                fugiat doloremque nesciunt consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+          <div class="right" data-aos="fade-left" data-aos-delay="200">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                illum suscipit inventore quisquam porro itaque eaque eius in
+                similique est iure temporibus totam dolore, minima repellat
+                fugiat doloremque nesciunt consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+          <div class="right" data-aos="fade-left" data-aos-delay="200">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                illum suscipit inventore quisquam porro itaque eaque eius in
+                similique est iure temporibus totam dolore, minima repellat
+                fugiat doloremque nesciunt consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end timeline -->
+    <!-- start feature -->
+    <div class="features">
+      <h2 data-aos="fade-down" data-aos-delay="200">Out Features</h2>
+      <div class="container">
+        <div class="feat-box" data-aos="fade-up" data-aos-delay="150">
+          <img src="imgs/feature-1.png" alt="" />
+          <h4>Development</h4>
+          <p>Lorem ipsum dolor, sit amet elit. Ratione, asperiores!</p>
+        </div>
+        <div class="feat-box" data-aos="fade-up" data-aos-delay="200">
+          <img src="imgs/feature-2.png" alt="" />
+          <h4>Development</h4>
+          <p>Lorem ipsum dolor, sit amet elit. Ratione, asperiores!</p>
+        </div>
+        <div class="feat-box" data-aos="fade-up" data-aos-delay="250">
+          <img src="imgs/feature-3.png" alt="" />
+          <h4>Development</h4>
+          <p>Lorem ipsum dolor, sit amet elit. Ratione, asperiores!</p>
+        </div>
+        <div class="feat-box" data-aos="fade-up" data-aos-delay="300">
+          <img src="imgs/feature-4.png" alt="" />
+          <h4>Development</h4>
+          <p>Lorem ipsum dolor, sit amet elit. Ratione, asperiores!</p>
+        </div>
+        <div class="feat-box" data-aos="fade-up" data-aos-delay="350">
+          <img src="imgs/feature-5.png" alt="" />
+          <h4>Development</h4>
+          <p>Lorem ipsum dolor, sit amet elit. Ratione, asperiores!</p>
+        </div>
+        <div class="feat-box" data-aos="fade-up" data-aos-delay="400">
+          <img src="imgs/feature-6.png" alt="" />
+          <h4>Development</h4>
+          <p>Lorem ipsum dolor, sit amet elit. Ratione, asperiores!</p>
+        </div>
+        <div class="clearfix"></div>
+        <
+      </div>
+      
+    </div>
+    
+    <!-- end feature -->
+    <!-- start testimonials -->
+    <div class="testimonials">
+      <div class="container">
+        <h2 data-aos="fade-down" data-aos-delay="200">Testimonials</h2>
+        <div
+          class="testimonials-box"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <p>I'm Happy With This Product It's Amazing</p>
+          <div class="person-info">
+            <img src="imgs/testimonials.png" alt="" />
+            <h4>Ziad Amer</h4>
+            <p>CEO At Company</p>
+          </div>
+        </div>
+        <div class="testimonials-box" data-aos="fade-up" data-aos-delay="200">
+          <p>I'm Happy With This Product It's Amazing</p>
+          <div class="person-info">
+            <img src="imgs/testimonials.png" alt="" />
+            <h4>Ziad Amer</h4>
+            <p>CEO At Company</p>
+          </div>
+        </div>
+        <div class="testimonials-box" data-aos="fade-left" data-aos-delay="200">
+          <p>I'm Happy With This Product It's Amazing</p>
+          <div class="person-info">
+            <img src="imgs/testimonials.png" alt="" />
+            <h4>Ziad Amer</h4>
+            <p>CEO At Company</p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <!-- end testimonials -->
+    <!-- start contact us -->
+    <div class="contact">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2 data-aos="fade-down" data-aos-delay="200">Contact Us</h2>
+        <form action="">
+          <div class="left" data-aos="fade-right" data-aos-delay="200">
+            <input type="text" name="username" id="" placeholder="Your name" />
+            <input type="number" name="phone" id="" placeholder="Your Phone" />
+            <input type="email" name="email" id="" placeholder="Your Email" />
+            <input type="text" name="subject" id="" placeholder="Subject" />
+          </div>
+          <div class="right" data-aos="fade-left" data-aos-delay="250">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end contact us -->
+    <!-- start footer  -->
+    <footer class="footer">
+      Created With Love By Ziad Amer &nbsp;
+      <i
+        data-aos="fade-left"
+        data-aos-delay="150"
+        class="fa-solid fa-heart"
+      ></i>
+    </footer>
+    <!-- end footer  -->
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
